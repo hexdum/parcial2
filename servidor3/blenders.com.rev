@@ -1,0 +1,21 @@
+$ORIGIN 100.191.209.in-addr.arpa.
+$TTL 3H
+@	IN SOA	server.blenders.com. root.blenders.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+@	IN	NS	server.blenders.com.
+@	IN	NS	servidor2.blenders.com.
+@	IN	NS	firewall.blenders.com.
+@	IN	PTR	blenders.com.
+
+
+server		IN	A	209.191.100.2
+servidor2	IN	A	192.168.100.4
+firewall	IN	A	209.191.100.3
+
+2	IN	PTR	server.blenders.com.
+4	IN	PTR	servidor2.blenders.com.
+3	IN	PTR	firewall.blenders.com.
